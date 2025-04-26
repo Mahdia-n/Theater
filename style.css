@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Bangers', cursive;
+    background: radial-gradient(circle at center, #dbd5d5 0%, #d6d3d3 100%);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .theater-name {
+    font-size: 2.5em;
+    color: gold;
+    text-shadow: 0 0 5px rgb(0, 255, 47), 0 0 10px rgb(21, 255, 0);
+    margin-top: 30px;
+  }
+  
+  .theater {
+    padding: 40px 20px;
+  }
+  
+  .screen-frame {
+    position: relative;
+    display: inline-block;
+    border: 10px solid #444;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ff0, 0 0 60px #f00;
+    padding: 15px;
+    background: #111;
+  }
+  
+  .screen-frame video {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+  
+  .lights {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    border: 5px dotted #f39c12;
+    animation: blink 1s infinite;
+    border-radius: 25px;
+  }
+  
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    font-family: 'Bangers', cursive;
+    background: rgb(217, 255, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #fff;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: rgb(149, 0, 255);
+  }
